@@ -1,0 +1,216 @@
+// mediasq //
+
+@media  screen and (max-width: 500px){
+    //index //
+    section{
+        h1{
+            font-size: $medidaGeneral;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            margin-bottom:5px;
+            font-size: $medidaGeneral - 1; 
+        }
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                
+                    height: 350px;
+                
+            }
+        }
+    }
+    //productos// 
+    
+    main{
+        h1{
+            font-size: $medidaGeneral;
+        }
+        .catalogo{
+        grid-template-areas: "img1 img1"
+                            "img2 img2"
+                            "img3 img3"
+                            "img4 img4"
+                            "img5 img5"
+                            "img6 img6"
+                            "img7 img7"
+                            "img8 img8"
+                            "img9 img9"
+                            "img10 img10"
+                            "img11 img11"
+                            "img12 img12"
+                            "img13 img13"
+                            "img14 img14"
+                            "img15 img15";
+    }
+    }
+    //servicios//
+    .principal{
+        display:grid;
+        grid-template-areas:"div1 div1"
+                            "div2 div2"
+                            "div3 div3"
+                            "div4 div4";
+        justify-content: center;
+        gap:0px;
+        div{
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    //nosotros// 
+    .container{
+        .riv{
+        div{
+            width: 100%;
+            img{
+                margin-left: -0rem;
+                width: 100%;
+            }
+        }
+        
+    }
+    }
+}
+@media  screen and (min-width: 500px){
+    //index// 
+    section{
+        h1{
+            font-size: $medidaGeneral + 0.2;
+        }
+        h2{
+            font-size: $medidaGeneral - 0.8;
+        }
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                
+                height: 500px;
+            }
+                
+        }
+    }
+    
+    //productops// 
+    main{
+        h1{
+            font-size: 40px;
+        }
+        .catalogo{
+            grid-template-areas:"img1 img2"
+                                "img3 img4"
+                                "img5 img6"
+                                "img7 img8"
+                                "img9 img10"
+                                "img11 img12"
+                                "img13 img14"
+                                "img15 img15";
+                                gap: 5px;
+                        div{
+                            margin-bottom: 10px;
+                                img{
+                                    @include medidas(100%,200px);
+                                }
+                        }
+        }
+    }
+    //servicios// 
+    .principal{
+        display:grid;
+        grid-template-areas:"div1 div1"
+                            "div2 div2"
+                            "div3 div3"
+                            "div4 div4";
+        justify-content: center;
+        gap:25px;
+        div{
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    //nosotros// 
+
+    .container{
+        .riv{
+        div{
+            width: 100%;
+            img{
+                margin-left: -0rem;
+                width: 100%;
+            }
+        }
+        
+    }
+    }
+}
+@media  screen and (min-width: 900px){
+    // index // 
+    section{
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                
+                    height: 800px;
+                
+            }
+        }
+    }
+    // productos //
+    main{
+        .catalogo{
+            @include grid;
+        }
+    }
+    //servicios // 
+    .principal{
+        display:grid;
+        grid-template-areas:"div1 div2"
+                            "div3 div4";
+        justify-content: center;
+        gap:25px;
+            div{
+                img{
+                    height: 400px;
+                }
+            }
+            
+    }
+    //nosotros// 
+    .container{
+        .riv{
+            display:grid;
+            grid-template-areas: "logo subtitulo"
+                                "logo parrafo";
+                img{
+                    grid-area: logo;
+                    margin-top: 20px;
+                }
+                h2{
+                    grid-area: subtitulo;
+                }
+                .nosotros{
+                    grid-area: parrafo;
+                }
+        }
+    }
+    
+    
+}

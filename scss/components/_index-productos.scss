@@ -1,0 +1,94 @@
+section{
+    text-align: center;
+    font-family: $tipografia;
+        h1{
+            animation-duration: 5s;
+        animation-name: salir;
+        animation-iteration-count: 1;
+        font-size: 80px;
+            @keyframes salir{
+                0%{
+                    opacity:0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            p{
+                margin: $medidaGeneral;
+                font-family:$tipografia; 
+            }
+        }
+}
+
+.carousel{
+        .carousel-inner{
+            .carousel-item{
+                .edicion-carusel{
+                    @extend %textoCarousel;
+                }
+                height: 700px;
+                    img{
+                    @include medidas(100%, 90%)
+                    }   
+            }
+        }
+}
+
+//productos//
+
+.catalogo {
+    display: grid;
+    grid-template-areas: "img1 img2 img3"
+                        "img4 img5 img6"
+                        "img7 img8 img9"
+                        "img10 img11 img12"
+                        "img13 img14 img15";
+    justify-content: center;
+    gap: 25px;
+    margin:20px;
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+    .img4{
+        grid-area: img4;
+    }
+    .img5{
+        grid-area: img5;
+    }
+    .img6{
+        grid-area: img6;
+    }
+    .img7{
+        grid-area: img7;
+    }
+    .img8{
+        grid-area: img8;
+    }
+    .img9{
+        grid-area: img9;
+    }
+    .img10{
+        grid-area: img10;
+    }
+    .img11{
+        grid-area: img11;
+    }
+    .img12{
+        grid-area: img12;
+    }
+    .img13{
+        grid-area: img13;
+    }.img14{
+        grid-area: img14;
+    }
+    .img15{
+        grid-area: img15;
+    }
+}

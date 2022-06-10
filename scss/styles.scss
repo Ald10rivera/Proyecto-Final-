@@ -1,0 +1,27 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/extend";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $colorBody;
+}
+
+@import "./components/layout";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+
+//estilo de index y productos //
+@import "./components/index-productos";
+
+
+//estilos de servicios y nosotros//
+@import "./components/srvicios-nos";
+
+//mediaqueries//
+@import "./components/mediaqueries";
+

@@ -1,0 +1,73 @@
+//servicios//
+.principal{
+    div{
+        p{
+            font-family:  $tipografia;
+            padding: 10px; 
+        }
+        img{
+            @include medidas(600px, 300px)
+        }
+    }
+    margin: $medidaGeneral;
+    display:grid;
+    grid-template-areas:"div1 div2"
+                        "div3 div4";
+    justify-content: center;
+    gap:25px;
+    
+        .div1{
+        grid-area: div1;
+        text-align: center;
+        padding: 20px;
+        }
+        .div2{
+        grid-area: div2;
+        text-align: center;
+        }
+        .div3{
+        grid-area: div3;
+        text-align: center;
+        }
+        .div4{
+        grid-area: div4;
+        text-align: center;
+        }
+        div:hover{
+            box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+            -webkit-box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+            -moz-box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+            transition: background-color 1s;
+            transform: scale(1.001);
+            color:black;
+        }
+}
+//nosotros// 
+.container{
+    background-color: #d3d3d3;
+    box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+    -webkit-box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+    -moz-box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+        @keyframes aparecer{
+            0%{
+                opacity:0;
+            } 
+            100%{
+                opacity: 1;
+            }
+        }
+        .riv{
+            img{
+                margin-left:$medidaGeneral +2;
+            }
+            .nosotros{
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 30px;
+            font-family:$tipografia ;
+            }
+        }
+}
